@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/portofolio.css" />
+    <link rel="stylesheet" href="../css/coming_soon.css" />
+
+    <article class="portfolio">
+      <div class="portfolio-header">
+        <h2>Portfolio</h2>
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search projects..."
+          />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+      </div>
+
+      <div class="filter-container">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Web Design</button>
+        <button class="filter-btn">Coming...</button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" data-category="web development">
+          <div class="project-image">
+            <img src="../assets/hci1.png" alt="HCI Project" />
+            <div class="project-overlay">
+              <a
+                href="../zip/HCI Semester 2 - Asphalt Lab.zip"
+                class="view-project"
+                >Download Project</a
+              >
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">HCI Project</h3>
+            <p class="project-category">Web Development</p>
+          </div>
+          <div class="project-gallery">
+            <img
+              class="img-hci-1"
+              src="../assets/hci2.png"
+              alt="HCI Screenshot 2"
+            />
+            <img
+              class="img-hci-1"
+              src="../assets/hci3.png"
+              alt="HCI Screenshot 3"
+            />
+            <img
+              class="img-hci-1"
+              src="../assets/hci4.png"
+              alt="HCI Screenshot 4"
+            />
+            <img
+              class="img-hci-1"
+              src="../assets/hci1.png"
+              alt="HCI Screenshot 1"
+            />
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web development">
+          <div class="project-image">
+            <img src="../assets/tpm-1.jpg" alt="TPM BNCC Project" />
+            <div class="project-overlay">
+              <a href="../zip/TPM BNCC.zip" class="view-project"
+                >Download Project</a
+              >
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">TPM BNCC</h3>
+            <p class="project-category">Web Development</p>
+          </div>
+          <div class="project-gallery">
+            <img
+              class="img-hci-1"
+              src="../assets/tpm-2.jpg"
+              alt="TPM Screenshot 2"
+            />
+            <img
+              class="img-hci-1"
+              src="../assets/tpm 3.jpg"
+              alt="TPM Screenshot 3"
+            />
+            <img
+              class="img-hci-1"
+              src="../assets/tpm 4.jpg"
+              alt="TPM Screenshot 4"
+            />
+            <img
+              class="img-hci-1"
+              src="../assets/tpm-1.jpg"
+              alt="TPM Screenshot 1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="home.html" class="navbar-link" data-nav-link>About Me</a>
+          </li>
+          <li class="navbar-item">
+            <a href="portofolio.html" class="navbar-link active" data-nav-link
+              >Portofolio</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <script src="../javascript/portofolio.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+    </article>
+  </head>
+</html>

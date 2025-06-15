@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("qK-s95Age8x7ICc_o");
+      })(); 
+    </script>
+
+  </head>
+  <body>
+    <div class="main-content">
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.468542591397!2d106.77967977453092!3d-6.201753160752389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x209cb1eef39be168!2sBINUS%20University%2C%20Kampus%20BINUS%20Anggrek!5e0!3m2!1sen!2sid!4v1739614416084!5m2!1sen!2sid"
+              width="600"
+              height="500"
+              loading="lazy"
+            ></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+            <div class="contact-wrapper">
+              <div class="input-wrapper">
+                <p class="hero__text">Full Name</p>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                  />
+                </div>
+    
+              <div class="input-wrapper">
+                <p class="hero__text">Email</p>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+          
+              <div class="input-wrapper">
+                <p class="hero__text">LinkedIn</p>
+                <input
+                  type="text"
+                  name="linkedIn"
+                  id="linkedIn"
+                  class="form-input"
+                  placeholder="LinkedIn Account"
+                  required
+                  data-form-input
+                />
+              </div>
+          
+              <div class="input-wrapper">
+                <p class="hero__text">Your Message</p>
+                <textarea
+                  name="message"
+                  class="form-input"
+                  id="message"
+                  placeholder="Your Message"
+                  required
+                  data-form-input
+                ></textarea>
+
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane-outline"></ion-icon>
+              <span>Submit</span>
+            </button>
+          </form>
+        </section>
+        <div class="toast__container toast__hide">
+          <p class="toast_content">Successfully Submitted!</p>
+        </div>
+
+      </article>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="home.html" class="navbar-link" data-nav-link>About Me</a>
+          </li>
+          <li class="navbar-item">
+            <a href="portofolio.html" class="navbar-link" data-nav-link>Portofolio</a>
+          </li>
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link active" data-nav-link>Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="../javascript/contact.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

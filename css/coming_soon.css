@@ -1,0 +1,44 @@
+.coming-soon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0;
+  transform: scale(1);
+  animation: fadeInScale 3s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1200px) {
+  .coming-soon-text {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .coming-soon-text {
+    font-size: 2.5rem;
+    min-height: 90vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .coming-soon-text {
+    font-size: 2rem;
+    min-height: 85vh;
+  }
+}
